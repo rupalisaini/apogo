@@ -1,0 +1,157 @@
+body {
+    background-image: url("blue.jpeg");
+    margin: 0;
+    font-family: "Georgia", Times, sans-serif;
+    color: rgb(222, 210, 196);
+    height: auto;
+}
+
+title {
+    font-style: bold;
+}
+.navbar {
+    background-color: #0f01018a;
+}
+.navbar a {
+    float: left;
+    color: rgb(98, 162, 221);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #f9f9f9;
+    color: black;
+}
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.navbar .icon {
+    display: none;
+}
+
+.div-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div {
+    text-align: center;
+    outline: none;
+    min-width:4px;
+}
+
+img {
+    float: center;
+    vertical-align: top;
+    align-items: stretch;
+    size: 100%;
+    background-size: .9%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Georgia", Times, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Georgia", Times, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    
+    text-align: center;
+}
+
+h3 {
+    font-family: "Georgia", Times, sans-serif;
+    font-size: large;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+html {
+    background-image: url("blue.jpeg");
+}
+
+.story{
+    border: rgb(222, 210, 196) 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#root{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.navbar{
+    margin-bottom: 30px;
+}
+
+.hero-body{
+    padding-top: 100px!important;
+}
+
+textarea{
+    height: 300px;
+    width: 500px;
+    background-color: black;
+    color: rgb(222, 210, 196);
+    padding: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+label{
+    margin-bottom: 20px;
+}
+
+.field{
+    margin-bottom: 15px;
+}
+
+#tags{
+    width: 500px;
+}
+
+input{
+    background-color: black;
+    color: rgb(222, 210, 196);
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+option{
+    background-color: black;
+    color: rgb(222, 210, 196);
+}
+
+select{
+    background-color: black;
+    color: rgb(222, 210, 196);
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+button{
+    background-color: black;
+    color: rgb(222, 210, 196);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHARE YOUR STORY</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="reach.png">
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+        <link rel='stylesheet' href= "reach.css">
+        <title>Share Your Story</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-start">
+                <a href="reach.html" class="navbar-item">
+                    Reach: Your Story is Our Story
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="aboutus.html" class="navbar-link">
+                        About Our Cause
+                    </a>
+    
+                    <div class="navbar-dropdown">
+                        <a href="aboutus.html" class="navbar-item">
+                            Who We Are
+                        </a>
+                        <a href="aboutus.html" class="navbar-item">
+                            Our Values
+                        </a>
+                        <a href="support.html" class="navbar-item">
+                            Ways to Help
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Share Your Story
+                    </a>
+    
+                    <div class="navbar-dropdown">
+                        <a href="submission.html" class="navbar-item" target="new">
+                            Form
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href= "stories.html"> 
+                        Find a Story
+                    </a>
+                </div>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search for a Story" name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </nav>
+        <div class="inner" id="root">
+            <h2>Share Your Story</h2>
+            <div class="split style1">
+                <section id="root">
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                            <label for="gender">Gender</label><br>
+                            <select id="gender-select">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Non-Binary">Non-Binary</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                            <div class="field half">
+                                <label for="age">Age</label><br>
+                                <input id="age" type="text" name="age" id="age" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Enter your story here:</label><br>
+                                <textarea id="message" name="message" id="message" rows="100"></textarea>
+                            </div>
+                            <div class="field">
+                                <label for="tags">Please tag your stories: (separated by commas)</label><br>
+                                <input id="tags" type="input" name="tags" id="tags" />
+                            </div>
+                        </div>
+                        <button type="button" id="submit-button">Share your story!</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

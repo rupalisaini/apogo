@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Stories </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="reach2.png">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link rel='stylesheet' href= "reach.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-start">
+            <a href="reach.html" class="navbar-item">
+                Reach: Your Story is Our Story
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a href="aboutus.html" class="navbar-link">
+                    About Our Cause
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a href="aboutus.html" class="navbar-item">
+                        Who We Are
+                    </a>
+                    <a href="aboutus.html" class="navbar-item">
+                        Our Values
+                    </a>
+                    <a href="support.html" class="navbar-item">
+                        Ways to Help
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Share Your Story
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a href="submission.html" class="navbar-item" target="new">
+                        Form
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a href= "stories.html"> 
+                    Find a Story
+                </a>
+            </div>
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search for a Story" name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </nav>
+        <div id="root">
+
+        <form method="post" action="#">
+            <label for="type">Filter by:</label>
+            <select id="type-select">
+                <option value="All">All</option>
+                <option value="Women">Women</option>
+                <option value="Non-Binary">Non-Binary</option>
+                <option value="Men">Men</option>
+                <option value="Race">Race</option>
+                <option value="Economic">Economic</option>
+                <option value="Disability">Disability</option>
+            </select>
+            <button type="button" id="type-button">Go</button>
+        </form>
+        <div id="stories-feed">hi</div>
+    </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
