@@ -3,17 +3,19 @@
     <head>
         <title>Share Your Story</title>
         <link ref="stylesheet" type="text/css" href="stylesheet/generic.html">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="inner">
             <h2>Share Your Story</h2>
             <p>Insert a blurb here!</p>
             <div class="split style1">
-                <section>
+                <section id="root">
                     <form method="post" action="#">
                         <div class="fields">
                             <label for="gender">Gender</label>
-                            <select>
+                            <select id="gender-select">
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Non-Binary">Non-Binary</option>
@@ -22,20 +24,18 @@
                             </select>
                             <div class="field half">
                                 <label for="age">Age</label>
-                                <input type="text" name="age" id="age" />
+                                <input id="age" type="text" name="age" id="age" />
                             </div>
                             <div class="field">
                                 <label for="message">Enter your story here</label>
-                                <textarea name="message" id="message" rows="100"></textarea>
+                                <textarea id="message" name="message" id="message" rows="100"></textarea>
                             </div>
                             <div class="field">
                                 <label for="tags">Please tag your stories:</label>
                                 <input type="input" name="tags" id="tags" />
                             </div>
                         </div>
-                        <ul class="actions" style="list-style-type:none;">
-                            <li><button type="submit">Submit</button></li>
-                        </ul>
+                        <button type="button" id="submit-button">Share your story!</button>
                     </form>
                 </section>
             </div>
