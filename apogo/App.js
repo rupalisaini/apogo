@@ -17,3 +17,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// returns one random coordinate
+function getRandomInRange(from, to, fixed) {
+  return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
+  // .toFixed() returns string, so ' * 1' is a trick to convert to number
+}
+var i = getRandomInRange(0,8,0)
+
+var i2 = getRandomInRange(0,8,0)
