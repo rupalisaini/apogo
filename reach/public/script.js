@@ -2,6 +2,7 @@ function handleSubmitButtonPress(event){
 
     let age = $('#age').val();
     let gender = $('#gender-select').val();
+    let location = $('#location').val();
     let message = $('#message').val();
     let tags = $('#tags').val();
     tags = tags.split(",");
@@ -12,10 +13,11 @@ function handleSubmitButtonPress(event){
 
     $('#age').val("");
     $('#gender-select').val("");
+    $('#location').val("");
     $('#message').val("");
     $('#tags').val("")
 
-    let submission = [age, gender, message, tags];
+    let submission = [age, gender, location, message, tags];
 
     let newarr = JSON.parse(localStorage.getItem("data-array"));
     console.log(newarr);
