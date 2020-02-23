@@ -55,14 +55,14 @@
                     <button type="submit">Submit</button>
                 </form>
             </nav>
-        <div class="inner">
+        <div class="inner" id="root">
             <h2>Share Your Story</h2>
-            <p>Insert a blurb here!</p>
             <div class="split style1">
                 <section id="root">
                     <form method="post" action="#">
                         <div class="fields">
-                            <label for="gender">Gender</label>
+                            <div class="field">
+                            <label for="gender">Gender</label><br>
                             <select id="gender-select">
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -70,16 +70,17 @@
                                 <option value="Other">Other</option>
                                 <option value="Prefer not to say">Prefer not to say</option>
                             </select>
+                        </div>
                             <div class="field half">
-                                <label for="age">Age</label>
+                                <label for="age">Age</label><br>
                                 <input id="age" type="text" name="age" id="age" />
                             </div>
                             <div class="field">
-                                <label for="message">Enter your story here</label>
+                                <label for="message">Enter your story here:</label><br>
                                 <textarea id="message" name="message" id="message" rows="100"></textarea>
                             </div>
                             <div class="field">
-                                <label for="tags">Please tag your stories: (separated by commas)</label>
+                                <label for="tags">Please tag your stories: (separated by commas)</label><br>
                                 <input id="tags" type="input" name="tags" id="tags" />
                             </div>
                         </div>

@@ -30,10 +30,10 @@ function renderStories(){
     console.log(stories);
     stories = stories.filter(checkTag);
     for(let i = 0; i < stories.length; i++){
-        let post = $('<div class="post" id="post"></div>');
-        post.append(`<div class='name-post'>` + stories[i][0], stories[i][1] + `</div>`);
-        let textBlock = $("<div id='block-post'>" + stories[i][2] + "</div>")
-        textBlock.append(`<div class='text-post'>` + stories[i][3] + `</div>`);
+        let post = $('<div class="story" id="story"></div>');
+        post.append(`<div class='detail-story'>` + stories[i][0] + "," + stories[i][1] + `</div>`);
+        let textBlock = $("<div id='block-story'>" + stories[i][2] + "</div>")
+        textBlock.append(`<div class='text-story'>` + stories[i][3] + `</div>`);
 
         post.append(textBlock);
 
