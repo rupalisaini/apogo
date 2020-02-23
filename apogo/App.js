@@ -17,3 +17,26 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// Create a Pokemon object
+class Pokemon {
+  constructor(coorx, coory, type) {
+    this.coorx = coorx;
+    this.coory = coory;
+    this.type = type;
+}
+}
+
+// List of all of the Pokemon 
+let listOfPokemon = ["Bulbasaur", "Charmander", "Diglett", "Jigglypuff", "Pikachu", "Bellsprout", "Meowth", "Psyduck", "Squirtle", "Voltorb"];
+
+// Timer
+var generatePokemon = setInterval(createPokemon, 15000);
+
+// Generates a Pokemon every 15 secs; after 15 secs it will regenerate in a new location
+function createPokemon() {
+  const type = listOfPokemon.random;
+  const coorx = Math.random(0,8);
+  const coory = Math.random(0,8);
+  const current = new Pokemon(coorx, coory, type);
+}
