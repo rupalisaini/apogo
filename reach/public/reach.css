@@ -5,6 +5,9 @@ body {
     color: rgb(222, 210, 196);
 }
 
+title {
+    font-style: bold;
+}
 .navbar {
     background-color: #0f01018a;
 }
@@ -41,14 +44,35 @@ div {
     z-index: 1;
 }
 
+img {
+    float: center;
+    vertical-align: top;
+    align-items: stretch;
+    size: 100%;
+    background-size: .9%;
+
+}
+
 h1 {
-    color: rgb(222, 210, 196);
-    font-weight: bold;
-    font-family: "Helvetica", Times, serif;
+    font-family: "Georgia", Times, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
     text-align: center;
 }
 
-img {
-    float: center;
+h2 {
+    font-family: "Georgia", Times, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    
+    text-align: center;
+}
 
+h3 {
+    font-family: "Georgia", Times, sans-serif;
+    font-size: large;
+    color: black;
+    font-weight: 400;
+    
+    text-align: center;
 }
