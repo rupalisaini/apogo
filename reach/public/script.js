@@ -3,14 +3,22 @@ localStorage.setItem('data-array', JSON.stringify(arr));
 
 function handleSubmitButtonPress(event){
 
-    let age = $('#root').find('input[id="age"]').val();
+    let age = $('#age').val();
     let gender = $('#gender-select').val();
-    let message = $('#root').find('textarea[id="message"]').val();
+    let message = $('#message').val();
+    let tags = $('#tags').val();
+    tags = tags.split(",");
+
     console.log(age);
     console.log(gender);
     console.log(message);
 
-    let submission = [age, gender, message];
+    $('#age').val("");
+    $('#gender-select').val("");
+    $('#message').val("");
+    $('#tags').val("")
+
+    let submission = [age, gender, message, tags];
 
     let newarr = JSON.parse(localStorage.getItem("data-array"));
     console.log(newarr);
