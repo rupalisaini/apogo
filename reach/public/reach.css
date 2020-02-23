@@ -31,7 +31,6 @@ title {
 .navbar .icon {
     display: none;
 }
-
 .div-content {
     display: none;
     position: absolute;
@@ -39,6 +38,12 @@ title {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+
+div {
+    text-align: center;
+    outline: none;
+    min-width:4px;
 }
 
 img {
@@ -70,6 +75,9 @@ h3 {
     font-size: large;
     color: black;
     font-weight: 400;
-    
     text-align: center;
+}
+
+html {
+    background-image: url("blue.jpeg");
 }
