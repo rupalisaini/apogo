@@ -53,6 +53,7 @@ img {
     float: center;
     vertical-align: top;
     align-items: stretch;
+    align-content: center;
     size: 200%;
     background-size: .9%;
     margin-bottom: 20px;
