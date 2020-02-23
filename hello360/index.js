@@ -41,3 +41,26 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('hello360', () => hello360);
+
+// Pokemon Placement
+function placePokemon() {
+  var count = 30;
+  var timer = setInterval(function() {
+    $("#counter").html(count--);
+    if (count == 1) { // if 30 seconds has passed || function is stopped, timer is stopped
+      clearInterval(timer);
+    }
+  }, 30000); // 30 seconds
+  return;
+}
+
+// Point System
+function pointsTracker() { // based on number of pokemons caught
+  var points = 0;
+  if (caughtPokemon) { // some boolean variable indicating if pokemon has been caught
+    points++;
+  } 
+}
+
+
+
