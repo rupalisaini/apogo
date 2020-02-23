@@ -1,85 +1,132 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.9.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.9.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.9.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.9.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.9.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <head>
+        <title>About us</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="reach.png">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link rel='stylesheet' href= "reach.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-start">
+                <a href="reach.html" class="navbar-item">
+                    Reach: Your Story is Our Story
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="aboutus.html" class="navbar-link">
+                        About Our Cause
+                    </a>
+    
+                    <div class="navbar-dropdown">
+                        <a href="aboutus.html" class="navbar-item">
+                            Who We Are
+                        </a>
+                        <a href="aboutus.html" class="navbar-item">
+                            Our Values
+                        </a>
+                        <a href="support.html" class="navbar-item">
+                            Ways to Help
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Share Your Story
+                    </a>
+    
+                    <div class="navbar-dropdown">
+                        <a href="submission.html" class="navbar-item" target="new">
+                            Form
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Find a Story
+                    </a>
+    
+                    <div class="navbar-dropdown">
+                        <a href="" class="navbar-item" >
+                           Gender
+                        </a>
+                        <a href="" class="navbar-item">
+                            Ethnicity
+                        </a>
+                        <a href="" class="navbar-item" >
+                            Religion
+                        </a>
+                         <a href="" class="navbar-item"> 
+                            Socioeconomic Status
+                        </a>
+                        <a href="" class="navbar-item">
+                            Mental Health
+                        </a>
+                        <a href="" class="navbar-item" >
+                            Acceptance
+                        </a>
+                        <a href="" class="navbar-item" >                        
+                            Sexuality
+                        </a>
+                        <a href="" class="navbar-item">
+                            Other
+                        </a>
+                    </div>
+                </div>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search for a Story" name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </nav>
+        <h2>Who We Are.</h2>
+        <br>
+        <p>
+            REACH creates meaningful connections, provides crucial resources for all, 
+            and tells the stories of many to share the single narrative of humanity. 
+        </p>
+        <br>
+        <h2>Our Mission.</h2>
+        <br>
+        <p>
+            Based on our values of vulnerability, trust, and respect, REACH 
+            establishes a relationship with our community that provides users 
+            a safe place to share their life stories, connects them with other 
+            users based on shared identities, and provides essential resources.
+        </p>
+        <br>
+        <h2>Our Values.</h2>
+        <br>
+        <p>
+          <ul>
+            <li>
+                Vulnerability: the genuine expression of emotions, insecurities, and struggles. To be vulnerable is to expose all parts of one’s self, freely and without shame.
+                We hope that you will display vulnerability through your stories. We aim to create a community built on a foundation of integrity and transparency.
+            </li>
+            <li>
+                Trust: a relationship built on trust constitutes mutual respect and belief in one another.  
+                We hope that you will display trust as a user of REACH. Our goal is that our users remain considerate and truthful in their relationships. We sincerely hope that your story is your truth.
+            </li>
+            <li>
+                Respect: an expression of admiration, empathy, and care for one another.
+                We hope that you take the time to read the stories of others, while displaying  empathy and open-mindedness. We want to create a safe space for all users that is built on respect. 
+            </li>
+          </ul>
+        </ul>>
+        </p>
+        <br>
+        <h2>How You Can Help!</h2>
+        <br>
+        <p>
+        <ul>
+        <li>
+            DONATE: As a nonprofit organization, REACH relies on the generous donations of our community to provide resources and assistance to our users. 
+        </li>
+        <li>
+            TELL YOUR STORY: One of the best ways to help is by telling your story. Be vulnerable. Be transparent. Let down the barriers that inhibit your truth. We at REACH believe that story-telling is one of the greatest ways to connect our community. By sharing your unique life story, we hope you find support and acceptance while letting others in our community know that they are not alone. 
+            SUPPORT OTHERS: Without the support of others, we are nothing. REACH exists to support our users by providing resources and connections. We hope that you help our community by supporting other users through listening, respecting, and trusting one another.         
+        </li>
+        </ul>
+        </p>
+    </body>
 </html>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAHyS-f-qUmhiuXkPlObs-SaClIyZFYVeI",
-    authDomain: "reaching.firebaseapp.com",
-    databaseURL: "https://reaching.firebaseio.com",
-    projectId: "reaching",
-    storageBucket: "reaching.appspot.com",
-    messagingSenderId: "103057977523",
-    appId: "1:103057977523:web:033c25673b8591714e80c6"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
